@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\santi\\Downloads\\Data-Persistence-Starter-Files\\",
+  "WorkspaceRootPath": "C:\\Users\\santi\\OneDrive\\Documentos\\UnityDevelopment\\Repos\\data-persistance-unity\\Data-Persistence-Starter-Files\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6070F9DA-46E4-BF8A-676A-9EB4374FC737}|Assembly-CSharp.csproj|c:\\users\\santi\\downloads\\data-persistence-starter-files\\assets\\scripts\\mainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6070F9DA-46E4-BF8A-676A-9EB4374FC737}|Assembly-CSharp.csproj|c:\\users\\santi\\onedrive\\documentos\\unitydevelopment\\repos\\data-persistance-unity\\data-persistence-starter-files\\assets\\scripts\\mainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6070F9DA-46E4-BF8A-676A-9EB4374FC737}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6070F9DA-46E4-BF8A-676A-9EB4374FC737}|Assembly-CSharp.csproj|c:\\users\\santi\\downloads\\data-persistence-starter-files\\assets\\scripts\\menuuihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6070F9DA-46E4-BF8A-676A-9EB4374FC737}|Assembly-CSharp.csproj|C:\\Users\\santi\\OneDrive\\Documentos\\UnityDevelopment\\Repos\\data-persistance-unity\\Data-Persistence-Starter-Files\\assets\\scripts\\menuuihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6070F9DA-46E4-BF8A-676A-9EB4374FC737}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menuuihandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainManager.cs",
-              "DocumentMoniker": "C:\\Users\\santi\\Downloads\\Data-Persistence-Starter-Files\\Assets\\Scripts\\MainManager.cs",
+              "DocumentMoniker": "C:\\Users\\santi\\OneDrive\\Documentos\\UnityDevelopment\\Repos\\data-persistance-unity\\Data-Persistence-Starter-Files\\Assets\\Scripts\\MainManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainManager.cs",
-              "ToolTip": "C:\\Users\\santi\\Downloads\\Data-Persistence-Starter-Files\\Assets\\Scripts\\MainManager.cs",
+              "ToolTip": "C:\\Users\\santi\\OneDrive\\Documentos\\UnityDevelopment\\Repos\\data-persistance-unity\\Data-Persistence-Starter-Files\\Assets\\Scripts\\MainManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainManager.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwCwAAAA9AAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwDAAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T15:24:12.74Z",
               "EditorCaption": ""
@@ -37,14 +37,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MenuUIHandler.cs",
-              "DocumentMoniker": "C:\\Users\\santi\\Downloads\\Data-Persistence-Starter-Files\\Assets\\Scripts\\MenuUIHandler.cs",
+              "DocumentMoniker": "C:\\Users\\santi\\OneDrive\\Documentos\\UnityDevelopment\\Repos\\data-persistance-unity\\Data-Persistence-Starter-Files\\Assets\\Scripts\\MenuUIHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuUIHandler.cs",
-              "ToolTip": "C:\\Users\\santi\\Downloads\\Data-Persistence-Starter-Files\\Assets\\Scripts\\MenuUIHandler.cs",
+              "ToolTip": "C:\\Users\\santi\\OneDrive\\Documentos\\UnityDevelopment\\Repos\\data-persistance-unity\\Data-Persistence-Starter-Files\\Assets\\Scripts\\MenuUIHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\MenuUIHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T20:53:09.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T20:53:09.452Z"
             }
           ]
         }
