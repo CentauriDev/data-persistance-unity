@@ -15,22 +15,27 @@ public class MainManager : MonoBehaviour
 
     public Text playerNameText;
     public static MainManager Instance;
-    
+
     private bool m_Started = false;
     private int m_Points;
-    
     private bool m_GameOver = false;
 
-    
+    public Player highScorePlayer;
+    public  Text highScoreText;
+    private const string HIGH_SCORE_KEY = "HighScore";
+
     // Start is called before the first frame update
     void Start()
     {
         string playerName = PlayerPrefs.GetString("PlayerName", "Default Player");
+        playerNameText.text = $"Current player, hi {playerName}!";
+        highScoreText.text = $"High Score: {MainManager.Instance.highScorePlayer.name} + {MainManager.Instance.highScorePlayer.score}";
+
 
         const float step = 0.6f;
         int perLine = Mathf.FloorToInt(4.0f / step);
-        
-        int[] pointCountArray = new [] {1,1,2,2,5,5};
+
+        int[] pointCountArray = new[] { 1, 1, 2, 2, 5, 5 };
         for (int i = 0; i < LineCount; ++i)
         {
             for (int x = 0; x < perLine; ++x)
@@ -42,7 +47,7 @@ public class MainManager : MonoBehaviour
             }
         }
 
-        playerNameText.text = "Welcome, " + playerName + "!";
+        LoadHighScore();
     }
 
     private void Update()
@@ -73,6 +78,14 @@ public class MainManager : MonoBehaviour
     {
         m_Points += point;
         ScoreText.text = $"Score : {m_Points}";
+
+        // Check for new high score
+        if (m_Points > highScorePlayer.score)
+        {
+            highScorePlayer.name = PlayerPrefs.GetString("PlayerName", "Default Player");
+            highScorePlayer.score = m_Points;
+            SaveHighScore();
+        }
     }
 
     public void GameOver()
@@ -83,15 +96,35 @@ public class MainManager : MonoBehaviour
 
     private void Awake()
     {
-        // start of new code
         if (Instance != null)
         {
             Destroy(gameObject);
             return;
         }
-        // end of new code
 
         Instance = this;
+        LoadHighScore(); // Load high score on Awake for persistent data
         DontDestroyOnLoad(gameObject);
     }
+
+    private void LoadHighScore()
+    {
+        highScorePlayer = new Player();
+        highScorePlayer.name = PlayerPrefs.GetString(HIGH_SCORE_KEY + "-Name", "N/A");
+        highScorePlayer.score = PlayerPrefs.GetInt(HIGH_SCORE_KEY + "-Score", 0);
+    }
+
+    private void SaveHighScore()
+    {
+        PlayerPrefs.SetString(HIGH_SCORE_KEY + "-Name", highScorePlayer.name);
+        PlayerPrefs.SetInt(HIGH_SCORE_KEY + "-Score", highScorePlayer.score);
+        PlayerPrefs.Save();
+    }
+
+    public class Player
+    {
+        public string name;
+        public int score;
+    }
 }
+
